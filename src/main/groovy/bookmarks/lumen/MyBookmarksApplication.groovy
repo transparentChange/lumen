@@ -1,5 +1,6 @@
 package bookmarks.lumen
 
+import org.flywaydb.core.Flyway
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.context.annotation.Bean
@@ -11,6 +12,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 class MyBookmarksApplication {
 
 	static void main(String[] args) {
+		Flyway flyway = Flyway
+				.configure()
+				.dataSource("jdbc:sqlite:lumen.sqlite", "admin", "admin").load()
+		flyway.migrate()
+
 		SpringApplication app = new SpringApplication(MyBookmarksApplication.class);
 		app.setDefaultProperties(Collections
 		  .singletonMap("server.port", "8080"));

@@ -1,18 +1,11 @@
-package bookmarks.lumen;
+package bookmarks.lumen.domain;
 
 import java.util.Date;
 
-public class Bookmark<T> {
-	//private Date dateAdded = new Date(1647652563438L);
+public class BookmarkNode {
+	private Date dateAdded;
 	private String title;
-	
-	/*
 	private String url;
-	private T[] children;
-	
-	Bookmark(Date addDate) {
-		//this.addDate = addDate;
-	}
 
 	public Date getDateAdded() {
 		return dateAdded;
@@ -21,7 +14,6 @@ public class Bookmark<T> {
 	public void setDateAdded(Date addDate) {
 		this.dateAdded = addDate;
 	}
-	*/
 
 	public String getTitle() {
 		return title;
@@ -31,7 +23,6 @@ public class Bookmark<T> {
 		this.title = title;
 	}
 
-	/*
 	public String getUrl() {
 		return url;
 	}
@@ -39,6 +30,7 @@ public class Bookmark<T> {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	*/
+
+
 }
 
