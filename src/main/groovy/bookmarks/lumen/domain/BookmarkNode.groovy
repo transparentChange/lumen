@@ -1,17 +1,15 @@
 package bookmarks.lumen.domain;
 
-import java.util.Date;
-
 public class BookmarkNode {
-	private Date dateAdded;
+	private String dateAdded;
 	private String title;
 	private String url;
 
-	public Date getDateAdded() {
+	public String getDateAdded() {
 		return dateAdded;
 	}
 
-	public void setDateAdded(Date addDate) {
+	public void setDateAdded(String addDate) {
 		this.dateAdded = addDate;
 	}
 

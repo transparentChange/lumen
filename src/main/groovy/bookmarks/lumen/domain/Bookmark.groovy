@@ -4,21 +4,40 @@ import org.hibernate.annotations.SQLInsert
 
 import javax.persistence.Column
 import javax.persistence.Entity
+import javax.persistence.EnumType
+import javax.persistence.Enumerated
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
 import javax.persistence.Table
 
+enum BookmarkStatus {
+    VISITED,
+    COMPLETED
+}
+
 @Entity
 @Table(name="bookmark")
-@SQLInsert(sql = "INSERT OR IGNORE INTO bookmark (date_added, location, title, url, bookmark_id) VALUES (?, ?, ?, ?, ?)")
+@SQLInsert(sql = """INSERT OR IGNORE INTO bookmark 
+    (date_added, expiry_date, location, period_hours, status, title, url, bookmark_id) 
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)""")
 class Bookmark {
+    Long getId() {
+        return id
+    }
+
+    void setId(Long id) {
+        this.id = id
+    }
     @Id
+    @Column(name = "bookmark_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long bookmark_id;
+    private Long id;
 
     @Column(name = "date_added", nullable = false)
-    private Date dateAdded;
+    private String dateAdded;
+
+    private String location;
 
     @Column(nullable = false)
     private String title;
@@ -26,7 +45,14 @@ class Bookmark {
     @Column(name = "url", unique = true, nullable = false)
     private String url;
 
-    private String location;
+    @Column(name = "period_hours")
+    private Long periodHours;
+
+    @Column(name = "expiry_date")
+    private String expiryDate;
+
+    @Enumerated(EnumType.STRING)
+    private BookmarkStatus status;
 
     Bookmark() {
     }
@@ -38,11 +64,11 @@ class Bookmark {
         this.location = location;
     }
 
-    public Date getDateAdded() {
+    public String getDateAdded() {
         return dateAdded;
     }
 
-    public void setDateAdded(Date addDate) {
+    public void setDateAdded(String addDate) {
         this.dateAdded = addDate;
     }
 
@@ -68,5 +94,29 @@ class Bookmark {
 
     void setLocation(String location) {
         this.location = location;
+    }
+
+    Long getPeriodHours() {
+        return periodHours
+    }
+
+    void setPeriodHours(Long periodHours) {
+        this.periodHours = periodHours
+    }
+
+    String getExpiryDate() {
+        return expiryDate
+    }
+
+    void setExpiryDate(String expiryDate) {
+        this.expiryDate = expiryDate
+    }
+
+    BookmarkStatus getStatus() {
+        return status
+    }
+
+    void setStatus(BookmarkStatus status) {
+        this.status = status
     }
 }
