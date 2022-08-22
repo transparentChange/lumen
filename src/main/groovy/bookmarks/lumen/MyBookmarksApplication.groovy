@@ -5,6 +5,7 @@ import org.flywaydb.core.Flyway
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.Configuration
 import org.springframework.scheduling.annotation.EnableScheduling
 import org.springframework.web.servlet.config.annotation.CorsRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
@@ -27,18 +28,24 @@ class MyBookmarksApplication {
 		SpringApplication app = new SpringApplication(MyBookmarksApplication.class);
 		app.setDefaultProperties(Collections
 		  .singletonMap("server.port", "8080"));
-		app.run(args);
+		app.run(MyBookmarksApplication.class, args);
 	}
-	
+
+
+
+
+}
+@Configuration
+public class DevConfig {
+
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurerAdapter() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/lumen/**").allowedOrigins("*");
+				registry.addMapping("/**").allowedOrigins("http://localhost:4200");
 			}
 		};
 	}
-
 
 }

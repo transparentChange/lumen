@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS bookmark;
 CREATE TABLE bookmark (
     bookmark_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER,
     date_added VARCHAR(255) NOT NULL,
     location VARCHAR(255) NOT NULL,
     title VARCHAR(255) NOT NULL,
@@ -8,12 +9,27 @@ CREATE TABLE bookmark (
     period_hours INTEGER,
     expiry_date VARCHAR(20),
     status VARCHAR(20),
+    FOREIGN KEY (user_id)
+        REFERENCES user (user_id)
     FOREIGN KEY (period_hours)
         REFERENCES periods (hours)
         ON UPDATE CASCADE,
     FOREIGN KEY (status)
         REFERENCES view_status (status)
 );
+
+
+DROP TABLE IF EXISTS user;
+CREATE TABLE user (
+    user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255)
+);
+
+DROP TABLE IF EXISTS hibernate_sequence;
+DROP TABLE IF EXISTS view_status;
+DROP TABLE IF EXISTS periods;
 
 CREATE TABLE hibernate_sequence (
     next_val BIGINT

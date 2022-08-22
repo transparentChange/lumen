@@ -6,9 +6,12 @@ import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.EnumType
 import javax.persistence.Enumerated
+import javax.persistence.FetchType
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
+import javax.persistence.JoinColumn
+import javax.persistence.ManyToOne
 import javax.persistence.Table
 
 enum BookmarkStatus {
@@ -18,21 +21,18 @@ enum BookmarkStatus {
 
 @Entity
 @Table(name="bookmark")
-@SQLInsert(sql = """INSERT OR IGNORE INTO bookmark 
-    (date_added, expiry_date, location, period_hours, status, title, url, bookmark_id) 
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)""")
+@SQLInsert(sql = """INSERT OR IGNORE INTO bookmark
+    (date_added, expiry_date, location, period_hours, status, title, url, user_id)
+ VALUES (?, ?, ?, ?, ?, ?, ?, ?)""")
 class Bookmark {
-    Long getId() {
-        return id
-    }
-
-    void setId(Long id) {
-        this.id = id
-    }
     @Id
     @Column(name = "bookmark_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
 
     @Column(name = "date_added", nullable = false)
     private String dateAdded;
@@ -57,11 +57,28 @@ class Bookmark {
     Bookmark() {
     }
 
-    Bookmark(BookmarkNode node, String location) {
+    Bookmark(BookmarkNode node, User user, String location) {
         this.dateAdded = node.dateAdded;
         this.title = node.title;
         this.url = node.url;
+        this.user = user;
         this.location = location;
+    }
+
+    Long getId() {
+        return id
+    }
+
+    void setId(Long id) {
+        this.id = id
+    }
+
+    User getUser() {
+        return user
+    }
+
+    void setUser(User user) {
+        this.user = user
     }
 
     public String getDateAdded() {
