@@ -1,0 +1,61 @@
+2022-07-22 10:15:30.490  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:15:31.712  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-22 10:15:31.879  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interfaces.
+2022-07-22 10:15:33.034  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-07-22 10:15:33.050  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-22 10:15:33.050  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-07-22 10:15:33.050  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 10:15:33.398  INFO WHOFPF174FA4 --- [           main] o.a.c.c.C.[.[.[/lumen]                   : Initializing Spring embedded WebApplicationContext
+2022-07-22 10:15:33.398  INFO WHOFPF174FA4 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2807 ms
+2022-07-22 10:15:33.612  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 8.5.10 by Redgate
+2022-07-22 10:15:33.612  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.10
+2022-07-22 10:15:33.612  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : 
+2022-07-22 10:15:33.612  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-07-22 10:15:33.634  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-07-22 10:15:33.650  INFO WHOFPF174FA4 --- [           main] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:sqlite:lumen.sqlite (SQLite 3.36)
+2022-07-22 10:15:33.666  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.002s)
+2022-07-22 10:15:33.666  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Current version of schema "main": 1
+2022-07-22 10:15:33.666  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Schema "main" is up to date. No migration necessary.
+2022-07-22 10:15:33.851  INFO WHOFPF174FA4 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-22 10:15:33.982  INFO WHOFPF174FA4 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-07-22 10:15:34.352  INFO WHOFPF174FA4 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-22 10:15:34.518  INFO WHOFPF174FA4 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2022-07-22 10:15:34.618  INFO WHOFPF174FA4 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2022-07-22 10:15:36.138  INFO WHOFPF174FA4 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-22 10:15:36.153  INFO WHOFPF174FA4 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-22 10:15:36.832  WARN WHOFPF174FA4 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-22 10:15:37.443  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-07-22 10:15:37.493  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/lumen'
+2022-07-22 10:15:37.524  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : Started MyBookmarksApplication in 7.825 seconds (JVM running for 12.23)
+2022-07-22 10:17:57.295  INFO WHOFPF174FA4 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/lumen]                   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 10:17:57.298  INFO WHOFPF174FA4 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-07-22 10:17:57.348  INFO WHOFPF174FA4 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 50 ms
+2022-07-22 10:25:03.837  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : Starting MyBookmarksApplication using Java 11.0.15 on WHOFPF174FA4 with PID 15576 (C:\Users\sekirima\workspaces\exper\lumen\build\classes\groovy\main started by SEKIRIMA in C:\Users\sekirima\workspaces\exper\lumen)
+2022-07-22 10:25:03.857  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:25:05.037  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-22 10:25:05.153  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interfaces.
+2022-07-22 10:25:06.208  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-07-22 10:25:06.236  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-22 10:25:06.236  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-07-22 10:25:06.236  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 10:25:06.536  INFO WHOFPF174FA4 --- [           main] o.a.c.c.C.[.[.[/lumen]                   : Initializing Spring embedded WebApplicationContext
+2022-07-22 10:25:06.536  INFO WHOFPF174FA4 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2559 ms
+2022-07-22 10:25:06.748  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 8.5.10 by Redgate
+2022-07-22 10:25:06.748  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.10
+2022-07-22 10:25:06.748  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : 
+2022-07-22 10:25:06.760  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-07-22 10:25:06.792  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-07-22 10:25:06.804  INFO WHOFPF174FA4 --- [           main] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:sqlite:lumen.sqlite (SQLite 3.36)
+2022-07-22 10:25:06.816  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.002s)
+2022-07-22 10:25:06.820  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Current version of schema "main": 1
+2022-07-22 10:25:06.820  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Schema "main" is up to date. No migration necessary.
+2022-07-22 10:25:07.016  INFO WHOFPF174FA4 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-22 10:25:07.152  INFO WHOFPF174FA4 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-07-22 10:25:07.541  INFO WHOFPF174FA4 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-22 10:25:07.729  INFO WHOFPF174FA4 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2022-07-22 10:25:07.821  INFO WHOFPF174FA4 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2022-07-22 10:25:08.909  INFO WHOFPF174FA4 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-22 10:25:08.921  INFO WHOFPF174FA4 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-22 10:25:09.508  WARN WHOFPF174FA4 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-22 10:25:10.012  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-07-22 10:25:10.056  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/lumen'

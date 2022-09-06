@@ -1,0 +1,66 @@
+2022-08-21 20:48:17.873  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : Starting MyBookmarksApplication using Java 11.0.15 on WHOFPF174FA4 with PID 12912 (C:\Users\sekirima\workspaces\exper\lumen\build\classes\groovy\main started by SEKIRIMA in C:\Users\sekirima\workspaces\exper\lumen)
+2022-08-21 20:48:17.923  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-21 20:48:19.177  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-21 20:48:19.281  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2022-08-21 20:48:20.159  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-08-21 20:48:20.178  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-21 20:48:20.180  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-21 20:48:20.181  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-08-21 20:48:20.403  INFO WHOFPF174FA4 --- [           main] o.a.c.c.C.[.[.[/lumen]                   : Initializing Spring embedded WebApplicationContext
+2022-08-21 20:48:20.403  INFO WHOFPF174FA4 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2350 ms
+2022-08-21 20:48:20.597  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 8.5.10 by Redgate
+2022-08-21 20:48:20.597  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.10
+2022-08-21 20:48:20.597  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : 
+2022-08-21 20:48:20.601  WARN WHOFPF174FA4 --- [           main] c.z.h.HikariConfig                       : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2022-08-21 20:48:20.601  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-08-21 20:48:20.625  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-08-21 20:48:20.633  INFO WHOFPF174FA4 --- [           main] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:sqlite:lumen.sqlite (SQLite 3.36)
+2022-08-21 20:48:20.645  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.002s)
+2022-08-21 20:48:20.646  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Current version of schema "main": 1
+2022-08-21 20:48:20.647  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Schema "main" is up to date. No migration necessary.
+2022-08-21 20:48:20.760  INFO WHOFPF174FA4 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-21 20:48:20.864  INFO WHOFPF174FA4 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-08-21 20:48:21.135  INFO WHOFPF174FA4 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-21 20:48:21.258  INFO WHOFPF174FA4 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2022-08-21 20:48:21.337  INFO WHOFPF174FA4 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2022-08-21 20:48:22.175  INFO WHOFPF174FA4 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-21 20:48:22.188  INFO WHOFPF174FA4 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-21 20:48:22.329  WARN WHOFPF174FA4 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-21 20:48:23.679  INFO WHOFPF174FA4 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b6bae60, org.springframework.security.web.context.SecurityContextPersistenceFilter@31d791c0, org.springframework.security.web.header.HeaderWriterFilter@6aa85fcf, org.springframework.web.filter.CorsFilter@22c14d10, org.springframework.security.web.authentication.logout.LogoutFilter@16eca98a, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@1cd853ee, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58fbecde, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66ab3716, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6418075c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66be0e72, org.springframework.security.web.session.SessionManagementFilter@671c71e8, org.springframework.security.web.access.ExceptionTranslationFilter@4fa3bebe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@606d2a92]
+2022-08-21 20:48:24.199  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-08-21 20:48:24.210  WARN WHOFPF174FA4 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-08-21 20:48:24.212  INFO WHOFPF174FA4 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-21 20:48:24.216  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2022-08-21 20:48:24.222  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2022-08-21 20:48:24.226  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2022-08-21 20:48:24.226  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-08-21 20:48:24.232  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2022-08-21 20:48:24.232  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2022-08-21 20:48:24.242  INFO WHOFPF174FA4 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-21 20:48:24.272 ERROR WHOFPF174FA4 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-08-21 20:49:54.056  INFO WHOFPF174FA4 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.2.3.Final
+2022-08-21 20:49:54.119  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : Starting MyBookmarksApplication using Java 11.0.15 on WHOFPF174FA4 with PID 19564 (C:\Users\sekirima\workspaces\exper\lumen\build\classes\groovy\main started by SEKIRIMA in C:\Users\sekirima\workspaces\exper\lumen)
+2022-08-21 20:49:54.126  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-21 20:49:55.174  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-21 20:49:55.262  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2022-08-21 20:49:56.055  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-08-21 20:49:56.070  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-21 20:49:56.070  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-21 20:49:56.071  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-08-21 20:49:56.278  INFO WHOFPF174FA4 --- [           main] o.a.c.c.C.[.[.[/lumen]                   : Initializing Spring embedded WebApplicationContext
+2022-08-21 20:49:56.279  INFO WHOFPF174FA4 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2082 ms

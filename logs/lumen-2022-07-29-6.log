@@ -1,0 +1,53 @@
+2022-07-29 15:43:06.133  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : Starting MyBookmarksApplication using Java 11.0.15 on WHOFPF174FA4 with PID 22852 (C:\Users\sekirima\workspaces\exper\lumen\build\classes\groovy\main started by SEKIRIMA in C:\Users\sekirima\workspaces\exper\lumen)
+2022-07-29 15:43:06.174  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-07-29 15:43:07.195  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-29 15:43:07.286  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2022-07-29 15:43:08.259  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-07-29 15:43:08.275  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-29 15:43:08.276  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-07-29 15:43:08.276  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-29 15:43:08.497  INFO WHOFPF174FA4 --- [           main] o.a.c.c.C.[.[.[/lumen]                   : Initializing Spring embedded WebApplicationContext
+2022-07-29 15:43:08.498  INFO WHOFPF174FA4 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2227 ms
+2022-07-29 15:43:08.682  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 8.5.10 by Redgate
+2022-07-29 15:43:08.683  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.10
+2022-07-29 15:43:08.683  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : 
+2022-07-29 15:43:08.691  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-07-29 15:43:08.712  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-07-29 15:43:08.722  INFO WHOFPF174FA4 --- [           main] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:sqlite:lumen.sqlite (SQLite 3.36)
+2022-07-29 15:43:08.734  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.002s)
+2022-07-29 15:43:08.736  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Current version of schema "main": 1
+2022-07-29 15:43:08.737  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Schema "main" is up to date. No migration necessary.
+2022-07-29 15:43:08.900  INFO WHOFPF174FA4 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-29 15:43:09.009  INFO WHOFPF174FA4 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-07-29 15:43:09.330  INFO WHOFPF174FA4 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-29 15:43:09.488  INFO WHOFPF174FA4 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2022-07-29 15:43:09.561  INFO WHOFPF174FA4 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2022-07-29 15:43:10.386  INFO WHOFPF174FA4 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-29 15:43:10.395  INFO WHOFPF174FA4 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-29 15:43:10.879  WARN WHOFPF174FA4 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-29 15:43:11.554  INFO WHOFPF174FA4 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a865ebf, org.springframework.security.web.context.SecurityContextPersistenceFilter@23307c6c, org.springframework.security.web.header.HeaderWriterFilter@59172d2, org.springframework.security.web.csrf.CsrfFilter@53570fff, org.springframework.security.web.authentication.logout.LogoutFilter@95958d9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31428f76, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@387ef6a7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6b3d3e57, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ef812b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7202009e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@133d0471, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15251cc2, org.springframework.security.web.session.SessionManagementFilter@54da736e, org.springframework.security.web.access.ExceptionTranslationFilter@679886ad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6eff05e7]
+2022-07-29 15:43:11.629  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-07-29 15:43:11.668  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/lumen'
+2022-07-29 15:43:11.685  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : Started MyBookmarksApplication in 6.321 seconds (JVM running for 9.567)
+2022-07-29 15:43:55.284  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : Starting MyBookmarksApplication using Java 11.0.15 on WHOFPF174FA4 with PID 17728 (C:\Users\sekirima\workspaces\exper\lumen\build\classes\groovy\main started by SEKIRIMA in C:\Users\sekirima\workspaces\exper\lumen)
+2022-07-29 15:43:55.296  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-07-29 15:43:56.244  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-29 15:43:56.335  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interfaces.
+2022-07-29 15:43:57.332  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-07-29 15:43:57.364  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-29 15:43:57.365  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-07-29 15:43:57.367  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-29 15:43:57.690  INFO WHOFPF174FA4 --- [           main] o.a.c.c.C.[.[.[/lumen]                   : Initializing Spring embedded WebApplicationContext
+2022-07-29 15:43:57.691  INFO WHOFPF174FA4 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2301 ms
+2022-07-29 15:43:57.899  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 8.5.10 by Redgate
+2022-07-29 15:43:57.899  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.10
+2022-07-29 15:43:57.899  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : 
+2022-07-29 15:43:57.910  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-07-29 15:43:57.937  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-07-29 15:43:57.945  INFO WHOFPF174FA4 --- [           main] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:sqlite:lumen.sqlite (SQLite 3.36)
+2022-07-29 15:43:57.956  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.002s)
+2022-07-29 15:43:57.957  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Current version of schema "main": 1
+2022-07-29 15:43:57.958  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Schema "main" is up to date. No migration necessary.
+2022-07-29 15:43:58.189  INFO WHOFPF174FA4 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-29 15:43:58.347  INFO WHOFPF174FA4 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-07-29 15:43:58.712  INFO WHOFPF174FA4 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}

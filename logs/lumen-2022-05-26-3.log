@@ -1,0 +1,76 @@
+2022-05-26 14:35:01.004  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:02.015  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:03.003  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:04.018  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:05.018  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:06.013  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:07.011  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:08.009  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:48.982  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : Starting MyBookmarksApplication using Java 11.0.15 on WHOFPF174FA4 with PID 13376 (C:\Users\sekirima\workspaces\exper\lumen\build\classes\groovy\main started by SEKIRIMA in C:\Users\sekirima\workspaces\exper\lumen)
+2022-05-26 14:35:49.000  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-05-26 14:35:50.402  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-26 14:35:50.545  INFO WHOFPF174FA4 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interfaces.
+2022-05-26 14:35:51.730  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-05-26 14:35:51.752  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-26 14:35:51.753  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-05-26 14:35:51.754  INFO WHOFPF174FA4 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-26 14:35:52.193  INFO WHOFPF174FA4 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-05-26 14:35:52.194  INFO WHOFPF174FA4 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3082 ms
+2022-05-26 14:35:52.391  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 8.5.10 by Redgate
+2022-05-26 14:35:52.392  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.10
+2022-05-26 14:35:52.392  INFO WHOFPF174FA4 --- [           main] o.f.c.i.l.VersionPrinter                 : 
+2022-05-26 14:35:52.402  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-05-26 14:35:52.434  INFO WHOFPF174FA4 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-05-26 14:35:52.446  INFO WHOFPF174FA4 --- [           main] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:sqlite:lumen.sqlite (SQLite 3.36)
+2022-05-26 14:35:52.460  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.003s)
+2022-05-26 14:35:52.461  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Current version of schema "main": 1
+2022-05-26 14:35:52.462  INFO WHOFPF174FA4 --- [           main] o.f.c.i.c.DbMigrate                      : Schema "main" is up to date. No migration necessary.
+2022-05-26 14:35:52.636  INFO WHOFPF174FA4 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-26 14:35:52.774  INFO WHOFPF174FA4 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-26 14:35:53.194  INFO WHOFPF174FA4 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-26 14:35:53.364  INFO WHOFPF174FA4 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2022-05-26 14:35:53.444  INFO WHOFPF174FA4 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2022-05-26 14:35:54.522  INFO WHOFPF174FA4 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-26 14:35:54.538  INFO WHOFPF174FA4 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-26 14:35:55.036  WARN WHOFPF174FA4 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-26 14:35:55.654  INFO WHOFPF174FA4 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-05-26 14:35:55.712  INFO WHOFPF174FA4 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-26 14:35:55.738  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : Started MyBookmarksApplication in 7.898 seconds (JVM running for 13.583)
+2022-05-26 14:35:56.318  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:57.009  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:58.009  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:35:59.007  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:36:00.040 ERROR WHOFPF174FA4 --- [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot invoke method getPath() on null object
+	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:91)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:44)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.NullCallSite.call(NullCallSite.java:34)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
+	at bookmarks.lumen.service.LoggerService.upload(LoggerService.groovy:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-26 14:36:00.043  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:36:01.016  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:36:02.013  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:36:03.010  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:36:04.010  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:36:05.009  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:36:06.004  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:36:07.005  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:36:08.013  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:36:09.016  INFO WHOFPF174FA4 --- [   scheduling-1] b.l.s.LoggerService                      : Total bookmarks: 6
+2022-05-26 14:42:03.268  INFO WHOFPF174FA4 --- [           main] b.l.MyBookmarksApplication               : Starting MyBookmarksApplication using Java 11.0.15 on WHOFPF174FA4 with PID 23052 (C:\Users\sekirima\workspaces\exper\lumen\build\classes\groovy\main started by SEKIRIMA in C:\Users\sekirima\workspaces\exper\lumen)
