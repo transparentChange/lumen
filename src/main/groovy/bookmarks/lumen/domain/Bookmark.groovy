@@ -22,12 +22,12 @@ enum BookmarkStatus {
 @Entity
 @Table(name="bookmark")
 @SQLInsert(sql = """INSERT OR IGNORE INTO bookmark
-    (date_added, expiry_date, location, period_hours, status, title, url, user_id)
- VALUES (?, ?, ?, ?, ?, ?, ?, ?)""")
+    (date_added, expiry_date, location, period_hours, status, title, url, user_id, bookmark_id)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""")
 class Bookmark {
     @Id
     @Column(name = "bookmark_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)

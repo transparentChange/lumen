@@ -30,22 +30,4 @@ class MyBookmarksApplication {
 		  .singletonMap("server.port", "8080"));
 		app.run(MyBookmarksApplication.class, args);
 	}
-
-
-
-
-}
-@Configuration
-public class DevConfig {
-
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurerAdapter() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("http://localhost:4200");
-			}
-		};
-	}
-
 }
