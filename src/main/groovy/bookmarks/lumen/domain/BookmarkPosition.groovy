@@ -1,7 +1,4 @@
-package bookmarks.lumen.domain
-
-import org.hibernate.annotations.SQLInsert
-import com.fasterxml.jackson.annotation.JsonValue;
+package bookmarks.lumen.domain;
 
 import javax.persistence.Column
 import javax.persistence.Entity
@@ -18,17 +15,10 @@ import javax.persistence.Table
 import javax.persistence.SequenceGenerator
 import javax.persistence.CascadeType
 
-enum BookmarkStatus {
-    NEW, VISITED, COMPLETED
-}
-
 @Entity
-@Table(name="bookmark")
-@SQLInsert(sql = """INSERT IGNORE INTO bookmark
-    (date_added, expiry_date, location, period_hours, position, status, title, url, user_id)
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""")
-class Bookmark {
-    @Id
+@Table(name="bookmark_by_position")
+class BookmarkPosition {
+	@Id
     @Column(name = "bookmark_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -62,10 +52,10 @@ class Bookmark {
     @Enumerated(EnumType.STRING)
     private BookmarkStatus status;
 
-    Bookmark() {
+    BookmarkPosition() {
     }
 
-    Bookmark(BookmarkNode node, User user, SequenceNumber position, String location) {
+    BookmarkPosition(BookmarkNode node, User user, SequenceNumber position, String location) {
         this.dateAdded = node.dateAdded;
         this.title = node.title;
         this.url = node.url;

@@ -69,7 +69,6 @@ class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                                 () -> new UsernameNotFoundException(
                                         format("User: %s not found", username)
                                 ))
-
                 Role r = new Role()
                 r.authority = Role.USER
                 Set<Role> authorities = [r]
@@ -137,7 +136,7 @@ class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     CorsConfigurationSource corsConfigurationSource() {
         final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(["http://localhost:4200"])
+        configuration.setAllowedOrigins(["http://localhost:4200", "moz-extension://349df8b5-63f3-45e6-be5f-3661405ddc4e", "moz-extension://5bb5d3fb-2a72-47b2-93d4-01f9a0712297", "moz-extension://ebcee376-2abd-475c-abf6-cf01e244d8fc"])
         configuration.setAllowedMethods(["HEAD", "GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"])
         configuration.setAllowCredentials(true);
         configuration.setAllowedHeaders(["*"]);
